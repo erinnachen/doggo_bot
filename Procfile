@@ -1,1 +1,1 @@
-mix run
+web: mix run
