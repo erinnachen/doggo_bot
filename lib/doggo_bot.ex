@@ -20,7 +20,7 @@ defmodule DoggoBot do
         ExTwitter.retweet(tweet.id)
       end
     rescue
-      ExTwitter.Error -> :error
+      err in ExTwitter.Error -> err
     end
   end
 end
